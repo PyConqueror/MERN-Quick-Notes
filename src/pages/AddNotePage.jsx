@@ -1,8 +1,8 @@
 import AddNoteForm from "../components/AddNoteForm"
 
-function AddNotePage() {
+function AddNotePage({user}) {
     return (
-    <AddNoteForm/>
+    <AddNoteForm user={user}/>
     )
 }
 

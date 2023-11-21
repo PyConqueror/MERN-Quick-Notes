@@ -1,4 +1,4 @@
-const Note = require("../../models/note");
+const Note = require("../models/note");
 
 module.exports = {
     create,
@@ -11,6 +11,7 @@ async function create(req, res) {
         user: req.body.user
     })
     await note.save();
+    console.log(note)
 }
 
 async function show(req, res) {
