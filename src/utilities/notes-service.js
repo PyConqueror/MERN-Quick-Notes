@@ -6,3 +6,8 @@ export async function addNote(formData) {
     sendRequest(`${BASE_URL}/addnote`, 'POST', formData)
 }
 
+export async function getNotes(){
+    console.log("sending note request")
+    return await sendRequest(`${BASE_URL}/show`);
+}
+

@@ -15,6 +15,7 @@ async function create(req, res) {
 }
 
 async function show(req, res) {
-    const notes = Note.find({})
+    console.log('reached')
+    const notes = await Note.find({})
     res.json(notes)
 }

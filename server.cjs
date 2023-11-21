@@ -15,7 +15,7 @@ app.use(require('./config/checkToken.js'));
 // create-react-app has a "build" directory
 // vite uses the "dist" directory instead
 app.use('/api/users', require('./routes/api/users.cjs'));
-app.use('/api/notes', require('./routes/notes.cjs'));
+app.use('/api/notes', require('./routes/api/notes.cjs'));
 // app.use(favicon(path.join(__dirname, 'dist', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'dist')));
 

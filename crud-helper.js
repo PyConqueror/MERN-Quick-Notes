@@ -2,6 +2,8 @@ require('dotenv').config();
 require('./config/database.cjs');
 
 const User = require('./models/user');
+const Note = require("./models/note");
+
 // const Item = require('./models/item');
 // const Category = require('./models/category');
 // const Order = require('./models/order');
